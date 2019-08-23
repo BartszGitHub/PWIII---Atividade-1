@@ -1,15 +1,18 @@
-let x: number = 7
+let x: number = 12
 
-let sobra = function(x1:number): void {
+let sobra = function(x1:number): boolean {
     if (x1 % 2 == 0){
-       console.log ("Número par")
+        return true
     }
     else{
-        console.log ("Número ímpar")
+        return false
     }
 
 }
 
-sobra(x)
-
+if (sobra(x)) {
+    console.log("Par")
+}
+else
+    console.log("Ímpar")
 

@@ -1,10 +1,14 @@
-var x = 7;
+var x = 12;
 var sobra = function (x1) {
     if (x1 % 2 == 0) {
-        console.log("Número par");
+        return true;
     }
     else {
-        console.log("Número ímpar");
+        return false;
     }
 };
-sobra(x);
+if (sobra(x)) {
+    console.log("Par");
+}
+else
+    console.log("Ímpar");
